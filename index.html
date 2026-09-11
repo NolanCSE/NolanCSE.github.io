@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinterest Taste Library</title>
+<style>
+  body{max-width:720px;margin:40px auto;padding:0 20px;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1c1c1a;background:#fafaf8}
+  h1{font-size:28px;margin-bottom:4px}
+  h2{font-size:20px;margin-top:36px;border-bottom:1px solid #e4e2dc;padding-bottom:4px}
+  .muted{color:#77756f}
+  ul{padding-left:20px}
+  footer{margin-top:48px;font-size:14px;color:#77756f}
+</style>
+</head>
+<body>
+<h1>Pinterest Taste Library</h1>
+<p class="muted">A personal, single-user tool built and operated by Nolan Albanese.</p>
+
+<h2 id="about">What it does</h2>
+<p>Pinterest Taste Library is a small application that runs on its owner's own computer. It connects to the
+owner's Pinterest account through the official Pinterest API and reads the boards and pins that the owner has
+saved. Each saved image is then labelled locally with a category, descriptive tags and style notes, so the owner
+can browse, search and analyse their own design preferences over time.</p>
+<ul>
+  <li>Used by one person only: the Pinterest account owner. There are no other users and no public access.</li>
+  <li>Read-only. It requests the <code>boards:read</code>, <code>pins:read</code> and <code>user_accounts:read</code>
+      scopes and never creates, edits, deletes or publishes pins, boards or comments.</li>
+  <li>Runs periodically to pick up newly saved pins.</li>
+  <li>Not a social network, marketplace or content-distribution service.</li>
+</ul>
+
+<h2 id="privacy">Privacy policy</h2>
+<p>Last updated: September 2026.</p>
+<ul>
+  <li><strong>What is collected.</strong> Board names, pin titles, descriptions, links, creation dates and the pin
+      images from the owner's own Pinterest account, plus the OAuth tokens needed to read them.</li>
+  <li><strong>Where it is stored.</strong> Only on the owner's own computer, in a local database and image folder.
+      Nothing is uploaded to a public server or shared with other people.</li>
+  <li><strong>Third parties.</strong> Images are sent to an AI image-labelling service (OpenRouter and the model
+      provider it routes to) solely to generate descriptive tags. No other data is shared, and no data is sold.</li>
+  <li><strong>Retention and deletion.</strong> Data stays until the owner deletes the local data folder. Pinterest
+      access can be revoked at any time from Pinterest's settings under Security → Connected apps, which
+      immediately stops all access.</li>
+  <li><strong>Children.</strong> The tool is not intended for or used by anyone under 18.</li>
+  <li><strong>Contact.</strong> Questions about this policy can be sent to the owner at the email address shown on
+      this site's repository.</li>
+</ul>
+
+<h2 id="terms">Terms of use</h2>
+<p>This software is provided as-is for the personal use of its owner. It is not offered to the public as a service.</p>
+
+<footer>© 2026 Nolan Albanese</footer>
+</body>
+</html>
